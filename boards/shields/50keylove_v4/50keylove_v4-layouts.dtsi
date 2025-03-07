@@ -1,0 +1,63 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout0 {
+        compatible = "zmk,physical-layout";
+        display-name = "50keylove-LAYOUT";
+        kscan = <&kscan0>;
+        transform = <&keymap_transform0>;
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0  100    1500   360   160>
+            , <&key_physical_attrs 100 100  100  100    1500   360   160>
+            , <&key_physical_attrs 100 100  200   25    1500   360   160>
+            , <&key_physical_attrs 100 100  300    0    1500   360   160>
+            , <&key_physical_attrs 100 100  400   25    1500   360   160>
+            , <&key_physical_attrs 100 100  500   50    1500   360   160>
+            , <&key_physical_attrs 100 100  600   50    1500   360   160>
+            , <&key_physical_attrs 100 100  925   50 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1025   50 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1125   25 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1225    0 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1325   25 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1425  100 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1525  100 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100    0  200    1500   360   160>
+            , <&key_physical_attrs 100 100  100  200    1500   360   160>
+            , <&key_physical_attrs 100 100  200  125    1500   360   160>
+            , <&key_physical_attrs 100 100  300  100    1500   360   160>
+            , <&key_physical_attrs 100 100  400  125    1500   360   160>
+            , <&key_physical_attrs 100 100  500  150    1500   360   160>
+            , <&key_physical_attrs 100 100  600  150    1500   360   160>
+            , <&key_physical_attrs 100 100  925  150 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1025  150 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1125  125 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1225  100 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1325  125 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1425  200 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1525  200 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100    0  300    1500   360   160>
+            , <&key_physical_attrs 100 100  100  300    1500   360   160>
+            , <&key_physical_attrs 100 100  200  225    1500   360   160>
+            , <&key_physical_attrs 100 100  300  200    1500   360   160>
+            , <&key_physical_attrs 100 100  400  225    1500   360   160>
+            , <&key_physical_attrs 100 100  500  250    1500   360   160>
+            , <&key_physical_attrs 100 100  600  250    1500   360   160>
+            , <&key_physical_attrs 100 100  925  250 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1025  250 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1125  225 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1225  200 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1325  225 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1425  300 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1525  300 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100  350  350    1500   360   160>
+            , <&key_physical_attrs 100 100  450  350    1500   360   160>
+            , <&key_physical_attrs 100 100  550  350    1500   360   160>
+            , <&key_physical_attrs 100 100  916  239    4500   525     0>
+            , <&key_physical_attrs 100 100  265 1070 (-4500) (-75)     0>
+            , <&key_physical_attrs 100 100  975  350 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1075  350 (-1500)  1270   156>
+            , <&key_physical_attrs 100 100 1175  350 (-1500)  1270   156>
+            ;
+    };
+};

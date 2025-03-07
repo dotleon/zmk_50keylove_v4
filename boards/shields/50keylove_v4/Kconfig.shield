@@ -1,0 +1,2 @@
+config SHIELD_50KEYLOVE_V4
+    def_bool $(shields_list_contains,50keylove_v4)

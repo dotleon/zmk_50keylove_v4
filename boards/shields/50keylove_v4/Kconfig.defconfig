@@ -1,0 +1,7 @@
+if SHIELD_50KEYLOVE_V4
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "50keylove v4"
+
+endif
