@@ -1,2 +1,0 @@
-config SHIELD_50KEYLOVE_V4_DONGLE
-    def_bool $(shields_list_contains,50keylove_v4_dongle)
