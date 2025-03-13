@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     keymap {
@@ -14,7 +15,7 @@
                 &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &kp N
                 &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &kp N
                 &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &kp N
-                                           &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K
+                                           &kp D    &kp E    &kp F    &kp G    &out OUT_BLE    &out OUT_USB    &kp J    &kp K
             >;
         };
     };
