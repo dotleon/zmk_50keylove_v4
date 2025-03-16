@@ -12,7 +12,7 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &kp N
+                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &studio_unlock
                 &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &kp N
                 &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp M    &kp N
                                            &kp D    &kp E    &kp F    &kp G    &out OUT_BLE    &out OUT_USB    &kp J    &kp K
