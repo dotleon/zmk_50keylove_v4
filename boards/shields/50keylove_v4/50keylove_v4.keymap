@@ -15,7 +15,7 @@
                 , <&macro_tap &kp F8>
                 , <&macro_release &kp N5>
                 , <&macro_release &kp LSHIFT>
-                , <&macro_release &kp NCTRL>
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
