@@ -39,21 +39,23 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 22 GPIO_PULL_UP>,
-               <&gpio0 24 GPIO_PULL_UP>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <64>;
+        data-cmd-gpios = <&gpio0 24>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
+        prechargep = <0x22>;
+        reset-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>
+        height = <64>;
+        width = <128>;
+        spi-max-frequency = <10000000>;
+        reg = <0x3c>;
         segment-remap;
         com-invdir;
         inversion-on;
-        prechargep = <0x22>;
+        
     };
 };
