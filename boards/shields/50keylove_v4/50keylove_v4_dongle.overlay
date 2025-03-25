@@ -14,7 +14,7 @@
     };
 };
 
-/delete-node/ &default_kscan;
+/delete-node/ &kscan0;
 
 &pinctrl {
     spi0_default: spi0_default {
