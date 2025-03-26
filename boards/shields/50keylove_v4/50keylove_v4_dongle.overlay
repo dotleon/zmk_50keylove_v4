@@ -125,7 +125,7 @@
         height = <64>;
         width = <128>;
         spi-max-frequency = <10000000>;
-        //reg = <0x3c>;
+        reg = <0x00>;
         segment-remap;
         com-invdir;
         inversion-on;
