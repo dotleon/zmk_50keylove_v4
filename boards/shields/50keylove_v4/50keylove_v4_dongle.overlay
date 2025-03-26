@@ -1,4 +1,4 @@
-#include "50keylove_v4-layouts.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
