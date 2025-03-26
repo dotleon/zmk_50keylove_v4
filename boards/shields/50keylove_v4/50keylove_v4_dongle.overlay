@@ -7,14 +7,14 @@
         zmk,physical-layout = &physical_layout1;
     };
 
-    mock_kscan: kscan1 {
+    mock_kscan: mock_kscan {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
     };
 
-    default_transform2: keymap_transform1 {
+    keymap_transform1: keymap_transform1 {
         compatible = "zmk,matrix-transform";
         columns = <14>; // Length of the "col-gpios" array
         rows = <4>; // Length of the "row-gpios" array
@@ -29,8 +29,8 @@
     physical_layout1: physical_layout1 {
         compatible = "zmk,physical-layout";
         display-name = "50keylove-LAYOUT";
-        kscan = <&kscan1>;
-        transform = <&default_transform2>;
+        kscan = <&mock_kscan>;
+        transform = <&keymap_transform1>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0  100    1500   360   160>
@@ -86,8 +86,6 @@
             ;
     };
 };
-
-/delete-node/ &kscan0;
 
 &pinctrl {
     spi0_default: spi0_default {
