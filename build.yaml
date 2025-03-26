@@ -28,6 +28,7 @@ include:
   # Change the board appropriately, you can use any board
   - board: nice_nano_v2
     shield: 50keylove_v4_dongle dongle_display
+    snippet: zmk-usb-logging
   #- board: nice_nano_v2
   #  shield: settings_reset
   # Add these cmake-args to the peripherals you wish to use with the dongle
