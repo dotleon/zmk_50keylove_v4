@@ -97,8 +97,8 @@ const lv_img_dsc_t bongo_cat_left1 = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
-  .header.w = 100,
-  .header.h = 52,
+  .header.w = 50,
+  .header.h = 26,
   .data_size = 190,
   .data = bongo_cat_left1_map,
 };
@@ -143,8 +143,8 @@ const lv_img_dsc_t bongo_cat_left2 = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
-  .header.w = 100,
-  .header.h = 52,
+  .header.w = 50,
+  .header.h = 26,
   .data_size = 190,
   .data = bongo_cat_left2_map,
 };
