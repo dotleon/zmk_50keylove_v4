@@ -73,7 +73,7 @@ static void set_battery_symbol(lv_obj_t *widget, struct battery_state state) {
     lv_obj_t *label = lv_obj_get_child(widget, state.source * 2);
 
     //draw_battery(symbol, state.level, state.usb_present);
-    lv_label_set_text_fmt(label, "%4u%%", state.level);
+    lv_label_set_text_fmt(label, "%2u%%", state.level);
     
     if (state.level > 0 || state.usb_present) {
         //lv_obj_clear_flag(symbol, LV_OBJ_FLAG_HIDDEN);
@@ -134,7 +134,7 @@ ZMK_SUBSCRIPTION(widget_dongle_battery_status, zmk_usb_conn_state_changed);
 int zmk_widget_dongle_battery_status_init(struct zmk_widget_dongle_battery_status *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
 
-    lv_obj_set_size(widget->obj, 50, LV_SIZE_CONTENT);
+    lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
     
     for (int i = 0; i < ZMK_SPLIT_BLE_PERIPHERAL_COUNT + SOURCE_OFFSET; i++) {
         //lv_obj_t *image_canvas = lv_canvas_create(widget->obj);
