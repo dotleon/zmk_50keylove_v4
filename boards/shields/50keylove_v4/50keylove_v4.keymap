@@ -52,10 +52,10 @@
 
         num {
             bindings = <
-                &trans  &kp TAB    &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp KP_MULTIPLY  &kp KP_SLASH    &macro_0  &kp PG_UP  &kp HOME       &kp UP    &kp END    &trans  &trans
-                &trans  &kp ENTER  &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp DOT          &kp KP_MINUS    &trans    &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
-                &trans  &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3 &kp COMMA        &kp KP_PLUS     &trans    &trans     &kp LA(SPACE)  &trans    &trans     &trans  &kp LG(LS(S))
-                                              &trans     &trans    &trans           &trans          &trans    &trans     &trans         &trans
+                &trans  &kp TAB    &kp N7  &kp N8  &kp N9  &kp HU_STAR  &kp HU_SLASH    &macro_0  &kp PG_UP  &kp HOME       &kp UP    &kp END    &trans  &trans
+                &trans  &kp ENTER  &kp N4  &kp N5  &kp N6  &kp DOT      &kp HU_MINUS    &trans    &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
+                &trans  &kp N0     &kp N1  &k  N2  &kp N3  &kp COMMA    &kp HU_PLUS     &trans    &trans     &kp LA(SPACE)  &trans    &trans     &trans  &kp LG(LS(S))
+                                           &trans  &trans  &trans       &trans          &trans    &trans     &trans         &trans
             >;
         };
         fn {
