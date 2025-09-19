@@ -59,7 +59,7 @@
 
         sym {
             bindings = <
-                &trans  &kp HU_SQT   &kp HU_DQT   &kp HU_PLUS  &kp HU_EXCL  &kp HU_CARET  &trans         &trans  &kp HU_DLLR  &kp HU_EURO  &trans        &trans        &kp HU_PRCNT  &trans
+                &trans  &kp HU_SQT   &kp HU_DQT   &trans       &kp HU_EXCL  &kp HU_CARET  &trans         &trans  &kp HU_DLLR  &kp HU_EURO  &kp HU_TILDE  &trans        &kp HU_PRCNT  &trans
                 &trans  &kp HU_LPAR  &kp HU_RPAR  &kp HU_LBRC  &kp HU_RBRC  &kp HU_LBKT   &kp HU_RBKT    &trans  &kp HU_SEMI  &kp HU_PLUS  &kp HU_MINUS  &kp HU_EQUAL  &trans        &trans
                 &trans  &kp HU_LT    &kp HU_GT    &kp HU_PIPE  &kp HU_BSLH  &kp HU_SLASH  &trans         &trans  &kp HU_STAR  &kp HU_AT    &kp HU_AMPS   &kp HU_POUND  &trans        &trans
                                                   &trans       &trans       &trans        &trans         &trans  &trans       &trans       &trans
