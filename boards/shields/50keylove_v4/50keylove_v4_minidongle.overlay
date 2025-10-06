@@ -138,7 +138,7 @@
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
     compatible = "nordic,nrf-twi";
-    clock-frequency = <40000>;
+    clock-frequency = <400000>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
