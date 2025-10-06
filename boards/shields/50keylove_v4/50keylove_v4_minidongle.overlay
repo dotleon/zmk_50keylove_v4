@@ -145,11 +145,11 @@
         reg = <0x3c>;
         width = <72>;
         height = <40>;
-        segment-offset = <0>;
+        segment-offset = <28>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <39>;
-        segment-remap;
+        //segment-remap;
         com-invdir;
         //com-sequential;
         inversion-on;
