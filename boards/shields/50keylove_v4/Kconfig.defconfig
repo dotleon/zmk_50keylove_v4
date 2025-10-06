@@ -1,4 +1,4 @@
-if SHIELD_50KEYLOVE_V4 || SHIELD_50KEYLOVE_V4_DONGLE
+if SHIELD_50KEYLOVE_V4 || SHIELD_50KEYLOVE_V4_DONGLE || SHIELD_50KEYLOVE_V4_MINIDONGLE
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
@@ -6,17 +6,17 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
-if ZMK_DISPLAY
+if SHIELD_50KEYLOVE_V4_DONGLE
 
 config SPI
     default y
 
-config SSD1306
-    default y
+endif
 
-choice ZMK_DISPLAY_WORK_QUEUE
-    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
-endchoice
+if SHIELD_50KEYLOVE_V4_MINIDONGLE
+
+config I2C
+    default y
 
 endif
 
@@ -37,7 +37,14 @@ endchoice
 
 endif
 
-if SHIELD_50KEYLOVE_V4_DONGLE
+if SHIELD_50KEYLOVE_V4_DONGLE || SHIELD_50KEYLOVE_V4_MINIDONGLE
+
+config SSD1306
+    default y
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
