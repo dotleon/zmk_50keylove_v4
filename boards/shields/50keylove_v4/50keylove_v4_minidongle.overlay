@@ -138,20 +138,20 @@
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
     compatible = "nordic,nrf-twi";
-    clock-frequency = <400000>;
+    clock-frequency = <100000>;
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
-        width = <72>;
-        height = <40>;
+        width = <40>;
+        height = <72>;
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <31>;
         segment-remap;
         com-invdir;
-        com-sequential;
+        //com-sequential;
         inversion-on;
         prechargep = <0x22>;
     };
