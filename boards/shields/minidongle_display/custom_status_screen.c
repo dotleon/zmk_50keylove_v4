@@ -46,10 +46,10 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_t *bongo_cat_obj = zmk_widget_bongo_cat_obj(&bongo_cat_widget);
 
     // Set the size (width and height) as needed
-    lv_obj_set_size(bongo_cat_obj, 40, 29);
+    lv_obj_set_size(bongo_cat_obj, 30, 16);
 
     // Then align the widget as before:
-    lv_obj_align(bongo_cat_obj, LV_ALIGN_BOTTOM_RIGHT, 0, -7);
+    lv_obj_align(bongo_cat_obj, LV_ALIGN_BOTTOM_RIGHT, 0, 0);
 
     //zmk_widget_modifiers_init(&modifiers_widget, screen);
     //lv_obj_align(zmk_widget_modifiers_obj(&modifiers_widget), LV_ALIGN_BOTTOM_LEFT, 0, 0);
