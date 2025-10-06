@@ -58,9 +58,9 @@ lv_obj_t *zmk_display_status_screen() {
 
     zmk_widget_dongle_battery_status_init(&dongle_battery_status_widget, screen);
     lv_obj_align(zmk_widget_dongle_battery_status_obj(&dongle_battery_status_widget), LV_ALIGN_BOTTOM_LEFT, 0, 0);
-    
+
     lv_obj_t* rect = lv_obj_create(lv_scr_act()); // Create a rectangle on the active screen
-    lv_obj_set_size(rect, 72, 40);                // Set size to 72x40 pixels
+    lv_obj_set_size(rect, 70, 38);                // Set size to 72x40 pixels
     lv_obj_set_pos(rect, 0, 0);                   // Position at top-left corner
     lv_obj_set_style_border_width(rect, 1, LV_PART_MAIN);  // Set border width (e.g., 1 pixel)
     lv_obj_set_style_border_color(rect, lv_color_white(), LV_PART_MAIN); // Set border color to white
